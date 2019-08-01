@@ -9,6 +9,7 @@ Pod::Spec.new do |spec|
   spec.source_files = 'FBShimmering/FBShimmering{,View,Layer}.{h,m}'
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+  spec.static_framework = true
 
   spec.ios.deployment_target = '6.0'
 end
