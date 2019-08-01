@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/facebook/Shimmer.git', :tag => '1.0.2' }
   spec.source_files = 'FBShimmering/FBShimmering{,View,Layer}.{h,m}'
   spec.requires_arc = true
-  
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+
   spec.ios.deployment_target = '6.0'
 end
